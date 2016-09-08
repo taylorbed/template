@@ -1,0 +1,340 @@
+
+
+/* SUMMARY BLOCK STYLES
+---------------------------------------------------*/
+
+// tweak: { "category" : "Summary Block", "title" : "Summary Block Title Font", "type" : "font", "target" : ".summary-header-text, .summary-title", "showOnlyWhenPresent" : ".summary-title, .summary-title-link" }
+.summary-heading-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+// tweak: { "category" : "Summary Block", "title" : "Summary Block Title Color", "type" : "color", "target" : ".summary-header-text, .summary-title", "showOnlyWhenPresent" : ".summary-title, .summary-title-link" }
+@summaryHeadingColor: #666;
+
+
+
+/* AUTO-CATEGORIZED - DO NOT ADD NEW TWEAKS HERE
+---------------------------------------------------*/
+
+// tweak: { "type" : "color", "title" : "Site Background", "target" : "body" }
+@background: #fcfcfc;
+
+// tweak: { "type" : "image", "title" : "Site Background Image", "target" : "body" }
+.bg-image {
+  background-image: none;
+  background-position: top left;
+  background-size: auto;
+  background-attachment: scroll;
+  background-repeat: repeat;
+}
+
+// tweak: { "type" : "color", "title" : "Canvas Background", "target" : "#canvas" }
+@canvasBackground:rgba(255, 255, 255, 0);
+
+// tweak: { "type" : "color", "title" : "Site Title Color", "target" : "#header, h1.logo" }
+@siteTitleColor: #222;
+
+// tweak: { "type" : "color", "title" : "Site Title (Hover) Color", "target" : "#header, h1.logo" }
+@siteTitleHoverColor: #444;
+
+// tweak: { "type" : "color", "title" : "Site Subtitle Color", "target" : ".logo-subtitle" }
+@subtitleColor: #ddd;
+
+// tweak: { "type" : "color", "title" : "Navigation Color", "target" : "#header, .main-nav:not(.mobileNav) > ul > li" }
+@navColor: #999;
+
+// tweak: { "type" : "color", "title" : "Navigation (Hover) Color", "target" : "#header, .main-nav:not(.mobileNav) > ul > li" }
+@navHoverColor: #111;
+
+// tweak: { "type" : "color", "title" : "Navigation (Active) Color", "target" : "#header, .main-nav:not(.mobileNav) > ul > li" }
+@navActiveColor: #111;
+
+// tweak: { "type" : "color", "title" : "Heading 1 Color", "target" : ".active-project h1:not(.logo), .collection-type-blog h1:not(.logo), .collection-type-page h1:not(.logo)" }
+@heading1Color: #222;
+
+// tweak: { "type" : "color", "title" : "Heading 2 Color", "target" : ".active-project h2, .collection-type-blog h2, .collection-type-page h2" }
+@heading2Color: #222;
+
+// tweak: { "type" : "color", "title" : "Heading 3 Color", "target" : ".active-project h3, .collection-type-blog h3, .collection-type-page h3" }
+@heading3Color: #222;
+
+// tweak: { "type" : "color", "title" : "Text Color", "target" : ".hentry, #page, #footer, .active-project .project-meta" }
+@bodyTextColor: #777;
+
+// tweak: { "type" : "color", "title" : "Body Link Color", "target" : "body" }
+@linkColor: #111;
+
+// tweak: { "type" : "color", "title" : "Body Link (Hover) Color", "target" : "body" }
+@linkHoverColor: #444;
+
+// tweak: { "type" : "color", "title" : "Blog Meta Color", "target" : ".meta", "category" : "Blog Styles", "showOnlyWhenPresent" : ".collection-type-blog" }
+@metaDataColor: #333;
+
+// tweak: { "type" : "color", "title" : "Page Border Color", "target" : "#page, .page-divider" }
+@pageBorderColor: #ddd;
+
+// tweak: { "type" : "color", "title" : "Social Icon Color", "target" : "#socialLinks", "showOnlyWhenPresent" : "body:not(.tweak-template-social-icon-standard-color) #socialLinks" }
+@socialIconColor: #1f1f1f;
+
+
+// tweak: { "type" : "font", "title" : "Site Title", "target" : "#header, h1.logo" }
+.site-title-font {
+  font-family: Oswald, arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 46px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+// tweak: { "type" : "font", "title" : "Site Subtitle", "target" : "#header, .logo-subtitle" }
+.site-subtitle-font {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 2.0em;
+  font-size: 13px;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+// tweak: { "type" : "font", "title" : "Navigation", "target" : "#header, .main-nav:not(.mobileNav) > ul > li" }
+.nav-font {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.6em;
+  font-size: 13px;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+// tweak: { "type" : "font", "title" : "Heading 1", "target" : ".active-project h1:not(.logo), .collection-type-blog h1:not(.logo), .collection-type-page h1:not(.logo)", "loadAllVariants" : "true" }
+.heading-1-font {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 22px;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+// tweak: { "type" : "font", "title" : "Heading 2", "target" : ".active-project h2, .collection-type-blog h2, .collection-type-page h2", "loadAllVariants" : "true" }
+.heading-2-font {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 18px;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+// tweak: { "type" : "font", "title" : "Heading 3", "target" : ".active-project h3, .collection-type-blog h3, .collection-type-page h3", "loadAllVariants" : "true" }
+.heading-3-font {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 13px;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+// tweak: { "type" : "font", "title" : "Body Text", "target" : "#page, #footer, .active-project .project-meta", "loadAllVariants" : "true" }
+.body-font {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6em;
+  font-size: 12px;
+  text-transform: none;
+  text-decoration: none;
+}
+
+
+// tweak: { "type" : "dropdown", "title" : "Blog Sidebar Display", "options" : [ "Auto", "Right", "Left", "Hidden" ], "target" : ".collection-type-blog #sidebar", "category" : "Blog Styles", "showOnlyWhenPresent" : ".collection-type-blog" }
+
+
+// tweak: { "type" : "value", "title" : "Site Width", "min" : 600, "max" :  1200, "step" : 10, "target" : "#canvas", property: "width" }
+@siteWidth: 900px;
+
+// tweak: { "type" : "value", "title" : "Blog Sidebar Width", "min" : 100, "max" : 600, "step" : 5, "target" : ".collection-type-blog #sidebar", property: "width", "condition" : { "Layout Style": [ "Left", "Right" ] }, "category" : "Blog Styles", "showOnlyWhenPresent" : ".collection-type-blog" }
+@blogSidebarWidth: 200px;
+
+// tweak: { "type" : "value", "title" : "Canvas Padding", "min" : 20, "max" : 100, "step" : 5, "target" : "#canvas", property: [ "padding-top", "padding-right", "padding-bottom", "padding-left" ], js: "true" }
+@outerPadding: 50px;
+
+// tweak: { "type" : "value", "title" : "Top Padding", "min" : 0, "max" : 100, "step" : 5, "target" : "#canvas", property: "margin-top", js: "true" }
+@topPadding: 10px;
+
+// tweak: { "type" : "value", "title" : "Navigation Link Spacing", "min" : 10, "max" : 100, "target" : ".main-nav:not(.mobileNav) > ul > li", property: "margin-left" }
+@navPadding: 30px;
+
+// tweak: { "type" : "value", "title" : "Header Padding", "min" : 0, "max" : 100, "target" : "#header", "property" : "margin-bottom" }
+@headerPadding: 50px;
+
+// tweak: { "type" : "value", "title" : "Page Padding", "min" : 0, "max" : 100, "target" : "#page", "property" : ["margin-top", "margin-bottom"], js: "true" }
+@pagePadding: 50px;
+
+// tweak: { "type" : "value", "title" : "Footer Padding", "min" : 0, "max" : 100, "target" : "#footer", "property" : "margin-top" }
+@footerPadding: 50px;
+
+// tweak: { "type" : "value", "title" : "Logo Size (Max)", "min" : 0, "max" : 300, "target" : ".logo-image .logo", property: "height" }
+@logoSize: 100px;
+
+// tweak: { "type" : "value", "title" : "Mobile Logo Size", "min" : 0, "max" : 300, "target" : ".logo-image .logo", property: "height" }
+@mobileLogoSize: 50px;
+
+
+// Index Styles
+
+// tweak: { "type" : "font", "title" : "Index Thumb Titles", "label" : "Index Thumb Title", "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : ".collection-type-index:not(.hide-thumbnail-titles) #projectPages" }
+.thumb-title-font {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.6em;
+  font-size: 12px;
+  text-transform: none;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+// tweak: { "type" : "color", "title" : "Index Thumb Title Color", "label" : "Index Thumb Title Color", "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : ".collection-type-index:not(.hide-thumbnail-titles) #projectPages" }
+@indexThumbTitles: #999;
+
+// tweak: { "type" : "dropdown", "title" : "Index Thumb Title Position", "options" : [ "Below", "Overlay" ], "default" : "Below", "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : ".collection-type-index:not(.hide-thumbnail-titles) #projectPages" }
+
+// tweak: { "type" : "value", "title" : "Index Sidebar Width", "label" : "Index Item Detail Width", "min" : 100, "max" : 600, "step" : 5, "target" : ".active-project .project-meta", property: "width", "category" : "Index Styles", "showOnlyWhenPresent" : ".active-project .project-meta" }
+@indexSidebarWidth: 300px;
+
+// tweak: { "type" : "dropdown", "title" : "Index Item Layout", "options" : [ "Auto", "Left", "Right", "Center" ], "default" : "Auto", "target" : ".active-project .project-meta", "category" : "Index Styles", "showOnlyWhenPresent" : ".active-project .project-meta" }
+
+// tweak: { "type" : "dropdown", "title" : "Thumbnail Layout", "label" : "Index Thumb Layout", "options" : [ "Autocolumns", "Basic Grid" ], "default" : "Basic Grid", "target" : "#projectThumbs", "js" : true, "category" : "Index Styles", "showOnlyWhenPresent" : "#projectPages" }
+
+// tweak: { "type" : "color", "title" : "Index Thumb Background Color", "label" : "Index Thumb Background", "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : "#projectPages" }
+@indexThumbBackground: #eee;
+
+// tweak: { "type" : "value", "title" : "Thumbnails Per Row", "min" : 1, "max" : 6, "target" : "#projectThumbs", "js" : true, "category" : "Index Styles", "showOnlyWhenPresent" : ".thumbnail-layout-basic-grid #projectPages" }
+@TPerRow: 4;
+
+// tweak: { "type" : "value", "title" : "Thumbnail Ratio", "target" : "#projectThumbs", "min" : 20, "max" : 200, "property" : "height", "category" : "Index Styles", "showOnlyWhenPresent" : ".thumbnail-layout-basic-grid #projectPages" }
+@TRatio: 150;
+
+// tweak: { "type" : "value", "title" : "Thumbnail Max Width", "target" : "#projectThumbs", "min" : 150, "max" : 400, "js" : true, "property" : "width", "category" : "Index Styles", "showOnlyWhenPresent" : ".thumbnail-layout-autocolumns #projectPages" }
+@TMaxWidth: 300;
+
+// tweak: { "type" : "value", "title" : "Thumbnail Padding", "min" : 0, "max" : 8, "step" : 0.1, "js" : true, "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : "#projectPages" }
+@TGutter: 3.0%;
+
+// tweak: { "type" : "value", "title" : "Thumbnail Opacity", "min" : 0, "max" : 100, "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : "#projectPages" }
+@thumbOpacity: 100;
+
+// tweak: { "type" : "value", "title" : "Thumbnail Hover Opacity", "min" : 0, "max" : 100, "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : "#projectPages" }
+@thumbHoverOpacity: 80;
+
+// tweak: { "type" : "dropdown", "title" : "Thumbnails on Open Page", "options" : [ "Show All", "Hide Active", "Hide All" ], "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : "#projectPages" }
+
+// tweak: { "type" : "checkbox", "title" : "Hide Thumbnail Titles", "label" : "Hide Index Thumb Titles", "target" : "#projectThumbs", "js" : true, "category" : "Index Styles", "showOnlyWhenPresent" : "#projectPages" }
+
+// tweak: { "type" : "checkbox", "title" : "Full Width Index", "label" : "Full Width Index", "active" : false, "target" : "#projectThumbs", "category" : "Index Styles", "showOnlyWhenPresent" : "#projectPages" }
+
+
+
+// tweak: { "type" : "value", "title" : "Blog Post Spacing", "min" : 0, "max" : 200, "target" : ".collection-type-blog .hentry", property: "margin-bottom", "category" : "Blog Styles", "showOnlyWhenPresent" : ".collection-type-blog" }
+@postPadding: 80px;
+
+// tweak: { "type" : "value", "title" : "Social Icon Size", "min" : 16, "max" : 48, "target" : "#socialLinks", "showOnlyWhenPresent" : "#socialLinks" }
+@socialIconSize: 16px;
+
+// tweak: { "type" : "dropdown", "title" : "Layout Style", "options" : [ "Right", "Center", "Left" ], "target" : "#canvas, #page, #header" }
+
+// tweak: { "type" : "dropdown", "title" : "Page Borders", "options" : [ "Dotted", "Thick", "Thin", "None" ], "target" : "#page, .page-divider, #header" }
+
+// tweak: { "type" : "checkbox", "title" : "Underline Body Links", "active" : "false", "target" : "#page" }
+
+// tweak: { "type" : "dropdown", "title" : "Gallery Page Controls", "options" : [ "Tiny Thumbnails", "Bullets", "Numbers", "Simple", "Hidden" ], "target" : ".project-controls", "category" : "Gallery Styles", "showOnlyWhenPresent" : ".collection-type-gallery" }
+
+// tweak: { "type" : "checkbox", "title" : "Gallery Auto Play", "target" : "#galleryWrapper", js: "true", "category" : "Gallery Styles", "showOnlyWhenPresent" : ".collection-type-gallery" }
+
+// tweak: { "type" : "value", "title" : "Gallery Play Speed", "min" : 1, "max" : 5, "step" : 0.1, "target" : "#galleryWrapper", js: "true", "category" : "Gallery Styles", "showOnlyWhenPresent" : ".collection-type-gallery" }
+@galleryPlaySpeed: 3.0;
+
+// tweak: { "type" : "dropdown", "title" : "Social Icon Style", "options" : [ "Normal", "Round", "Square" ], default: "Normal", "target" : "#socialLinks", "showOnlyWhenPresent" : "#socialLinks" }
+
+// tweak: {"title": "tweak-template-social-icon-standard-color", "label": "Standard Color", "type": "checkbox", "active": false, "showOnlyWhenPresent": "#socialLinks", "target": "#socialLinks"}
+
+// tweak: { "type" : "checkbox", "title" : "Hide Social Icons", default: "false", "target" : "#socialLinks", "showOnlyWhenPresent" : "#socialLinks" }
+
+
+
+/* Products */
+
+// tweak: { "type" : "checkbox", "title" : "Show Category Navigation", "active" : "false", "target" : "#header, #categoryNav", "showOnlyWhenPresent" : ".collection-type-products", "category" : "Products" }
+
+// tweak: { "type" : "font", "title" : "Category Nav Font", "target" : "#header, #categoryNav", "category" : "Products", "showOnlyWhenPresent" : ".collection-type-products.show-category-navigation" }
+.category-nav-font {
+  font-family: "futura-pt", Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+// tweak: { "type" : "color", "title" : "Category Nav Color", "target" : "#header, #categoryNav", "category" : "Products", "showOnlyWhenPresent" : ".collection-type-products.show-category-navigation" }
+@categoryNavColor: #999999;
+
+// tweak: { "type" : "color", "title" : "Category Nav Active Color", "target" : "#header, #categoryNav", "category" : "Products", "showOnlyWhenPresent" : ".collection-type-products.show-category-navigation" }
+@categoryNavActiveColor: #111111;
+
+
+
+// --------------------------------------------
+// SVG Icon in Templates
+// For use in templates where social icons are
+// hard coded.
+// --------------------------------------------
+
+// Wrapper Class for SVG Icons
+@social-icons-wrapper: 'social-links';
+
+// Set Icon Custom Color Name from TWEAK
+@social-icons-color: @socialIconColor;
+
+// Set Class name from Standard Color Checkbox
+@social-icons-standard-color: 'tweak-template-social-icon-standard-color';
+
+// Set Icon Size Class Name from TWEAK
+@social-icons-size-custom: @socialIconSize;
+
+// Set Icon Style Class Names from TWEAK
+@social-icons-style-regular:            'social-icon-style-normal';
+@social-icons-style-circle--knockout:   'social-icon-style-round';
+@social-icons-style-rounded--knockout:  'social-icon-style-square';
+
+// These are not used in this template, but need to be here or the mixins
+// in svg-icon-templates.less freak out.
+@social-icons-style-circle--border:     'tweak-template-social-icon-style-circle-border';
+@social-icons-style-circle--solid:      'tweak-template-social-icon-style-circle-solid';
+@social-icons-style-square--border:     'tweak-template-social-icon-style-square-border';
+@social-icons-style-square--knockout:   'tweak-template-social-icon-style-square-knockout';
+@social-icons-style-square--solid:      'tweak-template-social-icon-style-square-solid';
+@social-icons-style-rounded--border:    'tweak-template-social-icon-style-rounded-border';
+@social-icons-style-rounded--solid:     'tweak-template-social-icon-style-rounded-solid';
+
+@import 'svg-icon-templates';
