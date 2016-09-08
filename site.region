@@ -10,7 +10,7 @@
 </head>
 {.if template.mobileStylesEnabled}{.or}<!-- Mobile Styles Disabled -->{.end}
 <body class="{squarespace.page-classes}{.section website}{.section logoImageUrl} logo-image{.or} site-title{.end}{.end}<squarespace:navigation navigationId="mainNav">{.if items.0} has-primary-nav{.end}</squarespace:navigation>" id="{squarespace.page-id}">
-
+<p>HEY HI HELLO WORLD</p>
   <div id="canvas">
 
       <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
